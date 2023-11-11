@@ -40,14 +40,17 @@ addTodoBtn.addEventListener("click", (e) => {
 
     checkBox.onclick = () => {
       if (checkBox.checked == true) {
-        li.style.textDecoration = "line-through ";
+        s1.style.textDecoration = "line-through ";
+        s1.style.backgroundColor = "lightgreen ";
         document.body.style.backgroundColor = "lightgreen";
 
         setTimeout(() => {
           document.body.style.backgroundColor = "";
         }, 500);
       } else {
-        li.style.textDecoration = "none";
+        s1.style.backgroundColor = "";
+
+        s1.style.textDecoration = "none";
       }
     };
 

@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #494a4b;
-  font-family: "Gochi Hand", cursive;
+  font-family: cursive;
   text-align: center;
   font-size: 130%;
 }
@@ -55,6 +55,7 @@ body {
 }
 .heading__img {
   width: 24%;
+  background: none;
 }
 
 .form__label {
@@ -70,7 +71,8 @@ body {
   border-bottom-left-radius: 3px 15px;
   border: solid 3px transparent;
   border-bottom: dashed 3px #ea95e0;
-  font-family: "Gochi Hand", cursive;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   color: rgba(63, 62, 65, 0.7);
   width: 70%;
@@ -78,7 +80,7 @@ body {
 }
 .form__input:focus {
   outline: none;
-  border: solid 3px #ea95e0;
+  /* border: solid 3px #ea95e0; */
 }
 
 @media only screen and (min-width: 500px) {
@@ -111,7 +113,7 @@ body {
 
 .button:active,
 .button:focus {
-  transform: translateY(4px);
+  transform: translateY(10px);
   padding-bottom: 0px;
   outline: 0;
 }
@@ -119,10 +121,10 @@ body {
 .toDoList {
   text-align: left;
 }
-/* .toDoList li {
+.toDoList li {
   position: relative;
   padding: 0.5rem;
-} */
+}
 .toDoList li:hover {
   text-decoration: line-through wavy #24bffb;
 }
@@ -132,13 +134,15 @@ body {
 .s1 {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .s1 li {
-  margin-right: 270px;
+  width: 70%;
   list-style-type: none;
+  overflow-wrap: break-word;
 }
 
 .dltButton {
   color: red;
-  border-radius: 5px;
+  border: none;
 }
